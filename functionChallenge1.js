@@ -13,6 +13,8 @@ console.log(calcAverage(20, 15, 18));
 const marksDophines = calcAverage(30, 20, 8);
 const marksKoalas = calcAverage(50, 5, 10);
 
+// this is where the condition of checking who winners and assign the marksdophines&markskoalas to the checkwinner function!
+
 const CheckWinner = function calcWinner(marksDophines, marksKoalas) {
     if(marksDophines > marksKoalas) {
         console.log(`marksDophines is the Winner with the mark of ${marksDophines}`);
@@ -22,6 +24,8 @@ const CheckWinner = function calcWinner(marksDophines, marksKoalas) {
         console.log("No Teams Wins!!!");
     }
 }
+
+//this is where I'm calling the function and console the function in order to get the result
 
 const winnerResult = CheckWinner(marksDophines, marksKoalas);
 console.log(winnerResult);
