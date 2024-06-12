@@ -25,10 +25,10 @@ const CheckWinner = function calcWinner(marksDophines, marksKoalas) {
     }
 }
 
-//this is where I'm calling the function and console the function in order to get the result
+//this is where I'm calling the function and console the function in order to get the results!
 
 const winnerResult = CheckWinner(marksDophines, marksKoalas);
-console.log(winnerResult);
+console.log(winnerResult)
 
 
 
