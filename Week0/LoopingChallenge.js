@@ -1,3 +1,4 @@
+"use strict";
 const tipCalculator = function (invoice) {
     const lowRange = 50;
     const highRange = 300;

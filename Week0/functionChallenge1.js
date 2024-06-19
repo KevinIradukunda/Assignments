@@ -1,4 +1,4 @@
-
+"use strict";
 //create an arrow function for calculating the average of scores
 
 const calcAverage = (marks1, marks2, marks3) => {

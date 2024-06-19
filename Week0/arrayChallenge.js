@@ -1,3 +1,7 @@
+
+
+"use strict";
+
 //Creating the calcTip function
 const calcTip = function Tip(bill) {
     const calcBill1 = bill * 15;
