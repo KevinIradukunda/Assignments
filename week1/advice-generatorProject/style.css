@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--dark-blue);
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 480px;
+    width: 100%;
+    min-height: 300px;
+    background-color: var(--dark-grayish-blue);
+    text-align: center;
+    padding: 2.5rem 2.5rem 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.dice-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dice-btn:hover {
+    box-shadow: 0 0 20px var(--neon-green);
+}
+
+.dice-btn:active {
+    bottom: -27px;
+}
+
+.dice-btn img {
+    width: 20px;
+}
+
+.container h3 {
+    color: var(--neon-green);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.advice-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#advice {
+    color: var(--light-cyan);
+    font-size: 1.75rem;
+}
+
+.advice-container::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    height: 16px;
+    background-image: url("../images/pattern-divider-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
