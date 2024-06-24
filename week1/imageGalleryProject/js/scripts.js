@@ -1,4 +1,4 @@
-// Declare variables
+"use strict";
 const input = document.querySelector('input[type="search"]');
 const imageLinks = document.querySelectorAll('a');
 

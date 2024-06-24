@@ -30,8 +30,8 @@ const person = {
       };
     })();
   
-    createCounter.increment(); // Output: New count: 1
-    createCounter.increment(); // Output: New count: 2
+    createCounter.increment(); 
+    createCounter.increment(); 
   
     // 4. Reusable Component with Closure and this
     const createTimer = (function() {
@@ -52,5 +52,5 @@ const person = {
       };
     })();
   
-    createTimer(5); // Start a 5-second timer
+    createTimer(5); 
   });
